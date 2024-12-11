@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*?*
+
+# Allow search engines to crawl JavaScript and CSS
+Allow: /*.js$
+Allow: /*.css$
+
+# Block specific bots
+User-agent: BadBot
+Disallow: /
+
+# Crawl delay for heavy bots
+User-agent: *
+Crawl-delay: 10
+
+# Sitemaps
+Sitemap: https://luxurytravel.com/sitemap.xml
+Sitemap: https://luxurytravel.com/sitemap-services.xml
+Sitemap: https://luxurytravel.com/sitemap-destinations.xml
+Sitemap: https://luxurytravel.com/sitemap-blog.xml
